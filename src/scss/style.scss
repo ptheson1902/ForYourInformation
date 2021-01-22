@@ -1,0 +1,88 @@
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    h2{
+        cursor: pointer;
+    }
+    .carousel-caption{
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+    &.active>.carousel-caption{
+        transition: 1s ease-in-out;
+        transform: translateX(0);
+        opacity: 1;
+    }
+    @keyframes test1 {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+  }
+  
+  .carousel-indicators{
+      cursor: pointer;
+      display: flex;
+      justify-content: space-around;
+      color: #FFF;
+      margin-bottom: 50px;
+      div.active{
+          animation: test 1s ease-in-out infinite;
+      }
+      @keyframes test {
+        0%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(-10px);
+        }
+      }
+  }
+
+  .carousel-control-prev, .carousel-control-next{
+    width: 10%;
+  }
+
+  .carousel-control-prev-icon, .carousel-control-next-icon{
+      transform: scale(2);
+  }
+  .carousel-caption{
+      letter-spacing: 50px;
+      top: 40%;
+  }
+  .navigation{
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    z-index: 100;
+  }
+  .nav-link{
+     color: black;
+     font-weight: 400;
+  }
+
+.btn-outline-warning{
+      font-size: 12px;
+      padding: 0.3rem;
+}
+.card-text{
+      font-size: 12px;
+}
+
+div.vertical {
+    width: 1px;
+    height: 50px;
+    background: #333;
+    /* or height in PX */
+}

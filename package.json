@@ -1,0 +1,15 @@
+{
+  "name": "group",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass --watch src/scss/ --output css/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "The Son",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

@@ -1,0 +1,122 @@
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .carousel-item h2 {
+    cursor: pointer; }
+  .carousel-item .carousel-caption {
+    opacity: 0;
+    transform: translateX(-500px); }
+  .carousel-item.active > .carousel-caption {
+    transition: 1s ease-in-out;
+    transform: translateX(0);
+    opacity: 1; }
+
+@keyframes test1 {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.carousel-indicators {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  color: #FFF;
+  margin-bottom: 50px; }
+  .carousel-indicators div.active {
+    animation: test 1s ease-in-out infinite; }
+
+@keyframes test {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-10px); } }
+
+.carousel-control-prev, .carousel-control-next {
+  width: 10%; }
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  transform: scale(2); }
+
+.carousel-caption {
+  letter-spacing: 50px;
+  top: 40%; }
+
+.navigation {
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  z-index: 100; }
+
+.nav-link {
+  color: black;
+  font-weight: 400; }
+
+.btn-outline-warning {
+  font-size: 12px;
+  padding: 0.3rem; }
+
+.card-text {
+  font-size: 12px; }
+
+div.vertical {
+  width: 1px;
+  height: 50px;
+  background: #333;
+  /* or height in PX */ }
+
+.formDK{
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 35%;
+  font-size:0.7rem}
+  
+.formDK .box {
+  text-align: center;
+  background: #f4b526;
+  border-radius: 15px;
+  padding: 5%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  width: 25rem; }
+
+.formDK .box .box-item {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  color: black; }
+
+.formDK .delete {
+  margin-left: 20rem;
+  margin-bottom: 10px;
+  cursor: pointer; }
+
+.formDK .box .box-itemBtn {
+height: 2rem;
+width: 8rem;
+border-radius: 30px;
+margin: 2rem 0 0 7rem;
+border: none;
+font-weight: bold;
+background-color: white; }
+
+.formDK .box .sex{
+  width: 4rem;
+}
+
+.formDK .box .box-itemBtn:hover {
+background-color: #6dccf8;
+color: white; }

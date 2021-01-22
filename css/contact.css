@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    padding: 0 25%;
+}
+
+.main{
+    padding: 10px;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.main-item{
+    border: 1px solid  #033258;
+    border-radius: 17px;
+    padding: 10px;
+}
+.main-item-item{
+    display: flex;
+    flex-direction: column;
+    background-color: #033258;
+    border-radius: 17px;
+    padding: 30px 50px;
+    text-align: left;
+
+
+}
+.main-item-item input{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 12px;
+}
+.main-item-item label{
+    font-size: 18px;
+    margin-top: 15px;
+    color: white;
+}
+#messenger{
+    height: 150px;
+}
+
+.main-item-item a button{
+    font-size: 20px; 
+    margin-top: 20px; 
+    cursor: pointer;
+}
